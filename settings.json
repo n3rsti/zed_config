@@ -7,7 +7,20 @@
 // custom settings, run the `open default settings` command
 // from the command palette or from `Zed` application menu.
 {
+  "assistant": {
+    "default_model": {
+      "provider": "zed.dev",
+      "model": "claude-3-5-sonnet-latest"
+    },
+    "version": "2"
+  },
   "languages": {
+    "JSONC": {
+      "show_inline_completions": false
+    },
+    "C++": {
+      "show_inline_completions": false
+    },
     "Vue.js": {
       "show_inline_completions": false
     }
@@ -20,7 +33,8 @@
   "ui_font_family": "JetBrainsMono Nerd Font Mono",
   "vim_mode": true,
   "ui_font_size": 16,
-  "buffer_font_size": 15,
+  "buffer_font_family": "JetBrainsMono Nerd Font Mono",
+  "buffer_font_size": 14,
   "buffer_font_weight": 500,
   "telemetry": {
     "diagnostics": false,
@@ -40,5 +54,46 @@
   },
   "tab_bar": {
     "show": false
+  },
+  "format_on_save": "on",
+  "buffer_line_height": {
+    "custom": 1.5
+  },
+  "experimental.theme_overrides": {
+    "editor.active_line_number": "#ff9e64",
+    "editor.active_line.background": "#292e42",
+    "border.variant": "#ff9e64",
+    "players": [
+      {
+        "selection": "#283457"
+      }
+    ],
+    "syntax": {
+      "variable": {
+        "color": "#8affe6"
+      },
+      "punctuation.special": {
+        "color": "#ff9e64"
+      }
+    }
+  },
+  "project_panel": {
+    "button": false,
+    "default_width": 200,
+    "auto_fold_dirs": false
+  },
+  "indent_guides": {
+    "enabled": false
+  },
+  "show_whitespaces": "none",
+  "git": {
+    "inline_blame": {
+      "enabled": false
+    }
+  },
+  "gutter": {
+    "code_actions": false,
+    "folds": false,
+    "runnables": true
   }
 }
